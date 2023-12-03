@@ -1,0 +1,307 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.main {
+    margin: 5pc auto;
+    width: 50%;
+    border: .1pc solid #000;
+    background: radial-gradient(circle at 50% 50%, rgba(244, 0, 255, 1) 26%, rgba(0, 150, 136, 1) 63%, rgba(255, 0, 0, 1) 100%);
+    padding: .5pc;
+    border-radius: 1pc;
+}
+
+.trianglesbox {
+    display: flex;
+    padding: .5pc;
+    justify-content: space-between;
+}
+
+.triangle {
+    position: absolute;
+    height: 5pc;
+    width: 5pc;
+    transform: rotate(-45deg);
+    z-index: -3;
+    background: radial-gradient(pink, red,cyan);
+}
+
+.triangle1 {
+    top: 5.8%;
+    left: 26.3%;
+}
+
+.triangle2 {
+    top: 5.8%;
+    right: 26.3%;
+}
+
+
+/* upper box lights */
+.upperbox {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-auto-rows: auto;
+    height: auto;
+    padding: .5pc;
+    border-bottom: .2pc groove #eee;
+}
+
+.boxlights {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1pc;
+    border: .1pc dashed greenyellow;
+    padding: .5pc;
+    border-radius: 5pc;
+}
+
+
+.light {
+    border-radius: 100%;
+    }
+
+.lightbig {
+    height: 4pc;
+    width: 4pc;
+    background: red;
+    animation-name: droollightbig;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+
+
+@keyframes droollightbig {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.lightmid {
+    height: 3.5pc;
+    width: 3.5pc;
+    background: violet;
+    animation-name: droollightmid;
+    animation-duration: .1s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes droollightmid {
+    from {
+    background-color: blue;
+    }
+
+    to {
+        background-color: white;
+    }
+}
+
+.lightsmall {
+    height: 2.5pc;
+    width: 2.5pc;
+    background-color: yellow;
+}
+
+.imagecentral {
+    padding: .5pc;
+}
+
+.thisimg {
+    width: 100%;
+    height: 100%;
+    border-radius: 20pc;
+}
+
+/* Mid light lights */
+
+.midline-lights {
+    padding: .5pc;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-auto-rows: auto;
+    align-content: center;
+    gap: .5pc;
+    height: 5pc;
+}
+
+.midlight1 {
+    background-color:rgb(211, 247, 244);
+    background-color:rgb(211, 247, 244);
+    height: .8pc;
+    width: auto;
+    border-radius: 100%;
+}
+
+
+.midlight2 {
+    height: .8pc;
+    width: auto;
+    border-radius: 100%;
+    background-color: gold;
+    background: linear-gradient(90deg, rgba(255, 255, 0, 1) 0%, rgba(255, 59, 0, 1) 100%);
+}
+
+
+.midlight3 {
+    height: .8pc;
+    width: auto;
+    border-radius: 100%;
+    background-color:rgb(255, 0, 242);
+    background-color:rgb(211, 247, 244);
+}
+
+
+
+/* lower box */
+.innerlower {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-auto-rows: auto;
+    padding: .5pc;
+}
+
+.sidelights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5pc;
+}
+
+.cblight {
+    height: 1pc;
+    width: 1pc;
+    background: black;
+    border-radius: 100%;
+    animation-name: droolclub;
+    animation-duration: .4s;
+    animation-iteration-count: infinite;
+}
+
+.clublight1 {
+    background: blue;
+
+    
+}
+
+
+@keyframes droolclub {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.clublight2 {
+    background: red;
+}
+
+
+.clublight3 {
+    background: yellow;
+}
+
+.clublight4 {
+    background: cyan;
+}
+
+.clublight5 {
+    background :rgba(255, 255, 0, 1);
+}
+.clublight6 {
+    background: greenyellow;
+}
+.innerlowermid {
+    padding: .5pc;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1pc;
+}
+
+.titlebox {
+    font-size: 2.5pc;
+text-shadow: 0 .666pc .66pc;
+text-align: center;
+}
+
+.numberplate {
+    background: yellow;
+    padding: .5pc;
+    font-weight: 800;
+}
+
+/* lower indicators */
+
+.lowerindicators {
+    padding: .5pc;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3pc;
+    font-weight: bold;
+    color: black;
+    height: 2.5pc;
+    width: 6pc;
+    background-color: gold;
+    
+}
+
+@keyframes drool {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+.leftindicator {
+    border-radius: .5pc .5pc .5pc 4pc;
+    animation-name: drool;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+
+}
+
+.rightindicator {
+    border-radius: .5pc .5pc 4pc .5pc;
+
+}
+
+
+@media only screen and (max-width:996px) {
+    .main {
+        width: 80%;
+    }
+
+    .triangle1 {
+        left: 13.3%;
+    }
+
+    .triangle2 {
+        right: 13.3%;
+    }
+}
